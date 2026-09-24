@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./estilos.css" />
+        <title>Formulario de registro</title>
+    </head>
+    <body>
+        <main class="contenedor">
+            <header class="encabezado">
+                <h1>Registro de estudiantes</h1>
+                <p>Captura y consulta la información de estudiantes</p>
+            </header>
+            <form id="formmascotass">
+                <!-- Código -->
+                <div class="campo">
+                    <label for="codigo">Código</label>
+                    <input type="text" id="codigo" placeholder="Ingrese el código" required />
+                </div>
+                <!-- Nombre -->
+                <div class="campo">
+                    <label for="nombreEmpresa"> Nombre de la empresa </label>
+                    <input type="text" id="nombreEmpresa" placeholder="Ingrese el nombre" required />
+                </div>
+                <!-- Apellido -->
+                <div class="campo">
+                    <label for="propietario"> Propietario </label>
+                    <input type="text" id="propietario" placeholder="Ingrese el nombre propietario" required />
+                </div>
+                <!-- Apellido -->
+                <div class="campo">
+                    <label for="raza"> Raza </label>
+                    <input type="text" id="raza" placeholder="Ingrese el ap" required />
+                </div>
+
+                <!-- Tipo de usuario -->
+                <div class="campo">
+                    <label for="especie"> Especie </label>
+
+                    <select id="especie" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="perro">Perro</option>
+                        <option value="gato">Gato</option>
+                    </select>
+                </div>
+                     <!-- Apellido -->
+                <div class="campo">
+                    <label for="edad"> Edad (años) </label>
+                    <input type="text" id="edad" placeholder="Ingrese la edad" required />
+                </div>
+                <!-- Apellido -->
+                <div class="campo">
+                    <label for="alimentos"> Alimentos </label>
+                    <input type="text" id="alimentos" placeholder="Ingrese los alimentos" required />
+                </div>
+                <!-- Apellido -->
+                <div class="campo">
+                    <label for="vacunas"> Vacunas aplicadas </label>
+                    <input type="text" id="vacunas" placeholder="Ingrese las vacunas" required />
+                </div>
+                <!-- Observaciones -->
+                <div class="campo">
+                    <label for="observaciones"> Observaciones </label>
+
+                    <textarea id="observaciones" placeholder="Escriba alguna observación" rows="4"></textarea>
+                </div>
+                <!-- Botones -->
+                <div class="botones">
+                    <button type="submit" class="btn btn-guardar">Guardar mascotas</button>
+
+                    <button type="button" id="btnLimpiar" class="btn btn-limpiar">Limpiar datos</button>
+                </div>
+            </form>
+            <!-- Mensaje -->
+            <p id="mensaje" class="mensaje"></p>
+            <!-- Lista de mascotas -->
+            <section class="lista-section">
+                <h2>Mascota registrada</h2>
+                <div id="listamascotass"></div>
+            </section>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
+
